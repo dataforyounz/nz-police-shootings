@@ -1,0 +1,68 @@
+---
+title: "Police Shootings 1916 – 2021"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    theme: cerulean
+    version: 4
+    social: ["twitter", "linkedin"]
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+data_folder <- "../data_prep"
+data_file   <- "shooting_data.RData"
+data_path   <- file.path( data_folder, data_file )
+
+# Load shooting data
+load( data_path )
+
+```
+
+About
+=======================================================================
+
+#### About this dashbaord
+
+Ipsum Lorem
+
+---
+
+A link to the original report is provided [here](https://www.police.govt.nz/sites/default/files/publications/tactical-options-supplement-shootings-by-police-august2021.pdf).
+
+A link to Police data is provided [here](https://www.police.govt.nz/about-us/publications-statistics/data-and-statistics/policedatanz)
+
+---
+
+Last updated: `r format( Sys.Date(), "%d/%m/%Y")`
+
+Data
+=======================================================================
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
