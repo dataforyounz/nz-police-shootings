@@ -9,7 +9,7 @@ file_path   <- file.path( file_folder, file_name )
 # Table extraction or file import
 if( !file.exists( file.path(file_folder, "extracted_data.Rdata") ) ) {
  
-   # Select areas to extract
+  # Select areas to extract
   tables <- extract_areas( file_path )
   save( tables, file = file.path(file_folder, "extracted_data.Rdata") )
 
@@ -31,7 +31,7 @@ dfs <- lapply( seq_along(data),
                   tmp[-c(1:3),]
                 })
 
-# Bind all rows together to craete a final data frame
+# Bind all rows together to create a final data frame
 shooting_df <- do.call( rbind, dfs )
 
 # Save the variables
