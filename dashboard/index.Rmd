@@ -20,6 +20,11 @@ data_path   <- file.path( data_folder, data_file )
 # Load shooting data
 load( data_path )
 
+# Measures
+total_shootings <- nrow( shooting_df )
+total_fatal     <- nrow( subset( shooting_df, `Outcome of Shots Fired` == "Fatal" ) )
+total_non_fatal <- nrow( subset( shooting_df, `Outcome of Shots Fired` == "Non-fatal injury" ) )
+
 ```
 
 About
@@ -39,11 +44,13 @@ A link to Police data is provided [here](https://www.police.govt.nz/about-us/pub
 
 Last updated: `r format( Sys.Date(), "%d/%m/%Y")`
 
-Data
+Shootings
 =======================================================================
 
 Column {data-width=650}
 -----------------------------------------------------------------------
+
+
 
 ### Chart A
 
