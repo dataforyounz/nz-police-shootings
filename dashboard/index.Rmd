@@ -12,17 +12,23 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library( dplyr )
 
 data_folder <- "dat"
-data_file   <- "shooting_data.RData"
+data_file   <- "shooting_data.Rdata"
 data_path   <- file.path( data_folder, data_file )
 
 # Load shooting data
 load( data_path )
 
+shooting_df <- shooting_df %>% 
+               mutate( fatal_fl = case_when(
+                 Outcome.of.Shots.Fired 
+               ))
+
 # Measures
 total_shootings <- nrow( shooting_df )
-total_fatal     <- nrow( subset( shooting_df, `Outcome of Shots Fired` == "Fatal" ) )
+total_fatal     <- nrow( subset( shooting_df,  == "Fatal" ) )
 total_non_fatal <- nrow( subset( shooting_df, `Outcome of Shots Fired` == "Non-fatal injury" ) )
 
 ```

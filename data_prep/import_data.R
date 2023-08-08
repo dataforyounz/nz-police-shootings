@@ -24,6 +24,7 @@ data  <- tables[4:14]
 # Loop through each list element and tidy up column names
 # Columns names are spread over the first three rows
 # Export each page to .csv file for some manual processing (seemed easier...)
+if( !dir.exists(file.path(file_folder, "tmp")) ){
 dfs <- lapply( seq_along(data), 
                function(d){
                   tmp <- data.frame( data[[d]] ) 
@@ -31,14 +32,16 @@ dfs <- lapply( seq_along(data),
                   col_names <- trimws( paste( col_names_raw[1,], col_names_raw[2,], col_names_raw[3,] ))
                   colnames( tmp ) <- col_names
                   write.csv(  tmp[-c(1:3),], row.names = F, 
-                              file = file.path(file_folder, paste0("tmp_",d,".csv") ),
+                              file = file.path(file_folder, paste0("tmp/tmp_",d,".csv") ),
                               fileEncoding = "UTF-8"
                               )
                 })
 
+}
+
 dfs_in <- lapply( seq_along(data), function(d){
   
-  file <- paste0("tmp_", d, ".csv")
+  file <- paste0("tmp/tmp_",d,".csv") 
   read.csv( file = file.path(file_folder, file), stringsAsFactors = FALSE )
   
 })

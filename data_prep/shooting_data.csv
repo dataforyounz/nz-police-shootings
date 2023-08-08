@@ -1,122 +1,108 @@
 "Incident.Date","District","Outcome.of.Shots.Fired","Incident.Type","Subject.Weapon","Subject.Age","Subject.Sex","Subject.Ethnicity","Link.to.IPCA.Investigation.Public.Report"
-1916-04-02,"Bay of Plenty","Fatal","Arrest/Gun fight",NA,NA,"M","Māori",NA
-1916-04-02,"Bay of Plenty","Fatal","Arrest/Gun fight",NA,NA,"M","Māori",NA
-1916-04-02,"Bay of Plenty","Non-fatal injury","Arrest/Gun fight",NA,NA,"M","Māori",NA
-1916-04-02,"Bay of Plenty","Non-fatal injury","Arrest/Gun fight",NA,NA,"M","Māori",NA
-1941-10-20,"Tasman","Fatal","Homicide (multiple)",NA,NA,"M","Unknown",NA
-1949-12-14,"Canterbury","Fatal","Discharge firearms at police and public",NA,NA,"M","Unknown",NA
-1969-07-07,"Northland","Non-fatal injury","Kidnapping/Hostage situation; threaten/discharge firearms","RifleShotgun",NA,"M","Unknown",NA
+2016-04-02,"Bay of Plenty","Fatal","Arrest/Gun fight",NA,NA,"M","Maori",NA
+2016-04-02,"Bay of Plenty","Fatal","Arrest/Gun fight",NA,NA,"M","Maori",NA
+2016-04-02,"Bay of Plenty","Non-fatal injury","Arrest/Gun fight",NA,NA,"M","Maori",NA
+2016-04-02,"Bay of Plenty","Non-fatal injury","Arrest/Gun fight",NA,NA,"M","Maori",NA
+2041-10-20,"Tasman","Fatal","Homicide (multiple)",NA,NA,"M","Unknown",NA
+2049-12-14,"Canterbury","Fatal","Discharge firearms at police and public",NA,NA,"M","Unknown",NA
+1969-07-07,"Northland","Non-fatal injury","Kidnapping/Hostage situation; threaten/discharge firearms","Rifle; Shotgun",NA,"M","Unknown",NA
 1970-04-16,"Wellington","Fatal","Hostage situation; threaten Police with firearm","Shotgun (cut down)",NA,"M","Unknown",NA
 1971-01-05,"Waikato","Non-fatal injury","Accidental; situation unknown",NA,NA,NA,"Unknown",NA
 1975-06-01,"Canterbury","Fatal","1M - mental health; stabbing",NA,NA,"M","Unknown",NA
 1976-01-04,"Central","Fatal","Discharge firearms at police",NA,NA,"M","Unknown",NA
-1979-05-20,"Waitematā","Fatal","1D - domestic dispute incident",NA,NA,"M","Unknown",NA
+1979-05-20,"Waitemata","Fatal","1D - domestic dispute incident",NA,NA,"M","Unknown",NA
 1982-12-24,"Wellington","Fatal","Assault police with weapon","Bludgeoning weapon",NA,"M","Unknown",NA
 1983-01-28,"Auckland","Non-fatal injury","Hostage situation; threaten with firearm","Shotgun",18,"M","Unknown",NA
-1983-04-18,"Wellington","Fatal","Execute search warrant; threaten police with weapon","Bludgeoning weapon",26,"M","Māori",NA
+1983-04-18,"Wellington","Fatal","Execute search warrant; threaten police with weapon","Bludgeoning weapon",26,"M","Maori",NA
 1985-06-06,"Southern","Fatal","Homicide","Shotgun",32,"M","European",NA
-1986-04-07,"Bay of Plenty","Non-fatal injury","Homicide","Shotgun",18,"M","Māori",NA
+1986-04-07,"Bay of Plenty","Non-fatal injury","Homicide","Shotgun",18,"M","Maori",NA
 1986-03-14,"Northland","Fatal","Robbery; hostage situation",NA,NA,"M","Unknown",NA
 1990-10-27,"Auckland","Fatal","Threaten police with firearm","Shotgun",NA,"M","Unknown",NA
 1990-11-14,"Southern","Fatal","Homicide (multiple)","Rifle",33,"M","European",NA
 1991-01-25,"Southern","Non-fatal injury","Discharge firearm at police","Rifle",NA,"M","Unknown",NA
-1991-12-30,"Central","Non-fatal injury","Armed robbery","ShotgunRifle",36,"M","European",NA
+1991-12-30,"Central","Non-fatal injury","Armed robbery","Shotgun; Rifle",36,"M","European",NA
 1993-07-29,"Waikato","Fatal","Hostage situation; threaten police and public with weapon","Cutting/stabbing weapon",47,"M","European",NA
 1994-09-17,"Northland","Non-fatal injury","1C - car/person acting suspiciously","Cutting/stabbing weapon",22,"M","Unknown","https://www.ipca.govt.nz/includes/download.aspx?ID=104278"
 1995-07-19,"Wellington","Non-fatal injury","1M - mental health incident","Rifle",57,"M","Unknown","https://www.ipca.govt.nz/includes/download.aspx?ID=104275"
 1995-09-27,"Southern","Fatal","1M - mental health incident; siege; discharge firearm","Rifle",34,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=104274"
 1995-11-20,"Northland","Fatal","1M - mental health incident; discharge firearm","Rifle (cut down)",NA,"M","Unknown","https://www.ipca.govt.nz/includes/download.aspx?ID=104273"
 1996-02-06,"Tasman","Non-fatal injury","1D - domestic dispute incident","Cutting/stabbing weapon",25,"M","European",NA
-1996-06-24,"Eastern","Fatal","Homicide","Rifle",43,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=104266"
+1996-06-24,"Eastern","Fatal","Homicide","Rifle",43,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=104266"
 1996-08-29,"Auckland","Non-fatal injury","1M - mental health incident; hostage situation","Cutting/stabbing weapon",24,"F","European","https://www.ipca.govt.nz/includes/download.aspx?ID=104264"
-1996-09-21,"Counties Manukau","Fatal","Threaten/discharge firearm","Rifle",46,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=104259"
+1996-09-21,"Counties Manukau","Fatal","Threaten/discharge firearm","Rifle",46,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=104259"
 1998-08-26,"Canterbury","Non-fatal injury","Hostage situation; threaten/discharge firearm","Shotgun (cut down)",20,"M","European",NA
-1998-12-21,"Wellington","Non-fatal injury","Robbery","Shotgun",26,"M","Māori",NA
-1999-04-23,"Canterbury","Non-fatal injury","Threaten police with firearm","Shotgun",60,"M","Māori",NA
-1999-07-01,"Waitematā","Fatal","1S - sudden death","Replica firearm",31,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.aspx?ID=104251"
-1999-08-06,"Waitematā","Non-fatal injury","1D - domestic dispute incident","Cutting/stabbing weapon",33,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=105096"
-2000-02-16,"Southern","Non-fatal injury","Threaten police with weapon","Cutting/stabbing weapon",26,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=104250"
-2000-04-30,"Central","Fatal","Threaten police with weapon","Bludgeoning weapon",23,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=101402"
-2001-05-31,"Wellington","Miss","Kidnappingaggravated robbery",NA,31,"M","Unknown",NA
+1998-12-21,"Wellington","Non-fatal injury","Robbery","Shotgun",26,"M","Maori",NA
+1999-04-23,"Canterbury","Non-fatal injury","Threaten police with firearm","Shotgun",60,"M","Maori",NA
+1999-07-01,"Waitemata","Fatal","1S - sudden death","Replica firearm",31,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.aspx?ID=104251"
+1999-08-06,"Waitemata","Non-fatal injury","1D - domestic dispute incident","Cutting/stabbing weapon",33,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=105096"
+2000-02-16,"Southern","Non-fatal injury","Threaten police with weapon","Cutting/stabbing weapon",26,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=104250"
+2000-04-30,"Central","Fatal","Threaten police with weapon","Bludgeoning weapon",23,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=101402"
+2001-05-31,"Wellington","Miss","Kidnapping; aggravated robbery",NA,31,"M","Unknown",NA
 2001-11-21,"Canterbury","Non-fatal injury","Threaten police with weapon","Cutting/stabbing weapon",32,"M","Unknown","https://www.ipca.govt.nz/includes/download.aspx?ID=101424"
 2002-10-01,"Counties Manukau","Non-fatal injury","Threaten police","No weapon",26,"M","Pacific peoples",NA
-2004-04-20,"Waitematā","Non-fatal injury","Threaten police with weapon","Cutting/stabbing weapon",37,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.aspx?ID=101418"
+2004-04-20,"Waitemata","Non-fatal injury","Threaten police with weapon","Cutting/stabbing weapon",37,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.aspx?ID=101418"
 2004-06-16,"Auckland","Miss","2Z - Other service request response","No weapon",27,"M","European",NA
 2004-08-14,"Counties Manukau","Fatal","1D - domestic dispute incident","Cutting/stabbing weapon",37,"M","MELAA","https://www.ipca.govt.nz/includes/download.aspx?ID=101419"
-2005-11-28,"Waitematā","Non-fatal injury","1110 - Homicide","Cutting/stabbing weapon",34,"M","European",NA
+2005-11-28,"Waitemata","Non-fatal injury","1110 - Homicide","Cutting/stabbing weapon",34,"M","European",NA
 2007-01-06,"Wellington","Non-fatal injury","6820 - Firearms offences","Shotgun",35,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=101413"
-2007-09-26,"Canterbury","Fatal","3530 – Disorder","Bludgeoning weapon",37,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=101401"
-2007-11-27,"Northland","Miss","2R - Recovery motor vehicle","Vehicle",17,"M","Māori",NA
-2008-01-21,"Waikato","Non-fatal injury","4120 – Burglary","Rifle",19,"M","European",NA
+2007-09-26,"Canterbury","Fatal","3530 - Disorder","Bludgeoning weapon",37,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=101401"
+2007-11-27,"Northland","Miss","2R - Recovery motor vehicle","Vehicle",17,"M","Maori",NA
+2008-01-21,"Waikato","Non-fatal injury","4120 - Burglary","Rifle",19,"M","European",NA
 2008-10-23,"Northland","Fatal","1S - sudden death","Airgun - Rifle",37,"F","European","https://www.ipca.govt.nz/includes/download.aspx?ID=108400"
-NA,"","Non-fatal","",NA,NA,NA,"",NA
-2009-01-23,"Auckland","injury","2R - recovery motor vehicle","Rifle (cut down)",50,"M","Māori",NA
-NA,"","(offender)","",NA,NA,NA,"",NA
+2009-01-23,"Auckland","Non-fatal injury (offender)","2R - recovery motor vehicle","Rifle (cut down)",50,"M","Maori",NA
 2009-01-23,"Auckland","Fatal (bystander)","2R - recovery motor vehicle","No weapon",17,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.aspx?ID=120671"
-NA,"","Non-fatal","",NA,NA,NA,"",NA
-2009-01-23,"Auckland","injury","2R - recovery motor vehicle","No weapon",30,"M","European",NA
-NA,"","(bystander)","",NA,NA,NA,"",NA
-NA,"","","","Shotgun; Shotgun",NA,NA,"",NA
-2009-05-07,"Eastern","Miss","Execute search warrant","(cut down); Rifle;",51,"M","Unknown",NA
-NA,"","","","Handgun – pistol",NA,NA,"",NA
+2009-01-23,"Auckland","Non-fatal injury (bystander)","2R - recovery motor vehicle","No weapon",30,"M","European",NA
+2009-05-07,"Eastern","Miss","Execute search warrant","Shotgun; Shotgun (cut down); Rifle; Handgun - pistol",51,"M","Unknown",NA
 2009-06-28,"Canterbury","Fatal","1C - car/person acting suspiciously","Rifle Shotgun",42,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=110272"
-2009-07-27,"Auckland","Non-fatal injury","6820 - Firearms offences","Cutting/stabbing weapon",36,"M","Māori",NA
-2010-07-18,"Auckland","Non-fatal injury","1Z - other incident","Airgun",38,"M","Māori",NA
+2009-07-27,"Auckland","Non-fatal injury","6820 - Firearms offences","Cutting/stabbing weapon",36,"M","Maori",NA
+2010-07-18,"Auckland","Non-fatal injury","1Z - other incident","Airgun",38,"M","Maori",NA
 2011-02-24,"Central","Non-fatal injury","1Z - other incident","Rifle",28,"M","European","https://www.ipca.govt.nz/includes/download.aspx?ID=125543"
-2011-03-28,"Eastern","Fatal","Homicide","Shotgun",19,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=130981"
-NA,"","","","Cutting/stabbing",NA,NA,"",NA
-2011-07-16,"Central","Fatal","Kidnapping","weapon",46,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=135477"
-NA,"","","","Airgun - handgun",NA,NA,"",NA
-2011-10-20,"Eastern","Non-fatal injury","1710 - Intimidation/threats","No weapon",51,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=133903"
-2012-01-21,"Counties Manukau","Non-fatal injury","1D - domestic dispute incident","Bludgeoning weapon",43,"M","Māori",NA
-NA,"","","",NA,NA,NA,"","https://www.ipca.govt.nz/Site/z-"
-2012-03-15,"Canterbury","Non-fatal injury","3530 – Disorder","Cutting/stabbing weapon",31,"M","MELAA","archive/2015-Template-Archive-/media/2012/2012-October-4---"
-NA,"","","",NA,NA,NA,"","Zakariye-Hussein.aspx"
-2013-05-02,"Wellington","Non-fatal injury","1D - domestic dispute incident","Cutting/stabbing weapon",47,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=130808"
-2013-06-08,"Central","Fatal","4U - arrest and follow up","Rifle (Cut down)",33,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=138218"
-2013-07-08,"Waitematā","Fatal","Firearms offence","Rifle",20,"M","Māori","https://www.ipca.govt.nz/includes/download.aspx?ID=137516"
-2013-08-16,"Eastern","Non-fatal injury","1M - mental health","Airgun - handgun",33,"M","Māori",NA
-2013-11-07,"Counties Manukau","Miss","6E - EM bail breach","Bludgeoning weapon",46,"M","Māori",NA
+2011-03-28,"Eastern","Fatal","Homicide","Shotgun",19,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=130981"
+2011-07-16,"Central","Fatal","Kidnapping","Cutting/stabbing weapon; Airgun - handgun",46,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=135477"
+2011-10-20,"Eastern","Non-fatal injury","1710 - Intimidation/threats","No weapon",51,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=133903"
+2012-01-21,"Counties Manukau","Non-fatal injury","1D - domestic dispute incident","Bludgeoning weapon",43,"M","Maori",NA
+2012-03-15,"Canterbury","Non-fatal injury","3530 - Disorder","Cutting/stabbing weapon",31,"M","MELAA","https://www.ipca.govt.nz/Site/z-archive/2015-Template-Archive-/media/2012/2012-October-4---Zakariye-Hussein.aspx"
+2013-05-02,"Wellington","Non-fatal injury","1D - domestic dispute incident","Cutting/stabbing weapon",47,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=130808"
+2013-06-08,"Central","Fatal","4U - arrest and follow up","Rifle (Cut down)",33,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=138218"
+2013-07-08,"Waitemata","Fatal","Firearms offence","Rifle",20,"M","Maori","https://www.ipca.govt.nz/includes/download.aspx?ID=137516"
+2013-08-16,"Eastern","Non-fatal injury","1M - mental health","Airgun - handgun",33,"M","Maori",NA
+2013-11-07,"Counties Manukau","Miss","6E - EM bail breach","Bludgeoning weapon",46,"M","Maori",NA
 2014-10-21,"Waikato","Non-fatal injury","1D - domestic dispute incident","Shotgun (cut down)",50,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=147565"
-2015-04-28,"Counties Manukau","Non-fatal injury","6820 - Firearms offences","Handgun - pistol",42,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=148260"
-2015-05-02,"Waikato","Fatal","1110 – Homicide","Rifle",33,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=145645"
+2015-04-28,"Counties Manukau","Non-fatal injury","6820 - Firearms offences","Handgun - pistol",42,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=148260"
+2015-05-02,"Waikato","Fatal","1110 - Homicide","Rifle",33,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=145645"
 2015-08-02,"Auckland","Fatal","1S - sudden death","No weapon",21,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=145080"
-2015-08-20,"Tasman","Non-fatal injury","Driving and firearms offences","Shotgun",27,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=148544"
-2015-09-08,"Wellington","Fatal","2M - missing person","Rifle",25,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=145135"
-2015-10-26,"Eastern","Non-fatal ices/includes/download.ashx?IDinjury","1110 - Homicide","Shotgun",28,"M","European","https://most0010142.expert.serv=148132"
-2016-03-09,"Bay of Plenty","Miss","4O - other special/major ices/includes/download.ashx?IDoperation","Rifle",27,"M","Māori","https://most0010142.expert.serv=152235"
-2016-03-24,"Central","Non-fatal injury","1C – car/person acting suspiciously","Replica firearm",49,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.ashx?ID=148440"
+2015-08-20,"Tasman","Non-fatal injury","Driving and firearms offences","Shotgun",27,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=148544"
+2015-09-08,"Wellington","Fatal","2M - missing person","Rifle",25,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=145135"
+2015-10-26,"Eastern","Non-fatal injury","1110 - Homicide","Shotgun",28,"M","European","https://most0010142.expert.services/includes/download.ashx?ID=148132"
+2016-03-09,"Bay of Plenty","Miss","4O - other special/major operation","Rifle",27,"M","Maori","https://most0010142.expert.services/includes/download.ashx?ID=152235"
+2016-03-24,"Central","Non-fatal injury","1C - car/person acting suspiciously","Replica firearm",49,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.ashx?ID=148440"
 2016-06-10,"Waikato","Fatal","1D - domestic dispute incident","Cutting/stabbing weapon",57,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=149056"
 2016-07-12,"Waikato","Fatal","1S - sudden death","Shotgun",36,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=148172"
-2016-07-14,"Bay of Plenty","Fatal","Assault","Cutting/stabbing weapon",35,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=148377"
+2016-07-14,"Bay of Plenty","Fatal","Assault","Cutting/stabbing weapon",35,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=148377"
 2017-01-06,"Central","Fatal","1S - sudden death","Shotgun (cut down)",32,"M","Asian","https://www.ipca.govt.nz/includes/download.ashx?ID=150082"
 2017-02-04,"Canterbury","Non-fatal injury","1X - threaten/attempt suicide","Replica firearm",24,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=149445"
-NA,"","","",NA,NA,NA,"","https://most0010142.expert.serv"
-2017-02-26,"Wellington","Fatal","2R - recovery motor vehicle","Cutting/stabbing weapon",44,"M","European","ices/includes/download.ashx?ID=150490"
-2017-07-07,"Tasman","Non-fatal injury","3T - turnover","No weapon",34,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=152448"
-NA,"","","",NA,NA,NA,"","https://most0010142.expert.serv"
-2017-07-26,"Northland","Fatal-cause ices/includes/download.ashx?IDunconfirmed","Homicide","Rifle MSSA",56,"M","European","=152248"
-NA,"","","",NA,NA,NA,"","https://most0010142.expert.serv"
-2017-08-13,"Waikato","Miss","3T - turnover","MSSA",36,"M","Māori","ices/includes/download.ashx?ID"
-NA,"","","",NA,NA,NA,"","=153200"
-2017-08-28,"Waikato","Miss","2W - arrest warrant (other)","Vehicle",37,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=155889"
-2017-12-19,"Central","Non-fatal injury","1D - domestic dispute incident","Rifle (cut down)",22,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=155348"
-2018-02-23,"Northland","Miss","1C – car/person acting suspiciously","Unknown",40,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=154931"
-2018-03-31,"Waitematā","Fatal","1M - mental health","Cutting/stabbing weapon",29,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=156239"
-2018-10-19,"Waitematā","Non-fatal injury","1Z - other incident","Shotgun",22,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=159823"
-2018-11-25,"Canterbury","Fatal-cause unconfirmed","1D - domestic dispute incident","ShotgunVehicle",56,"M","Unknown","https://www.ipca.govt.nz/includes/download.ashx?ID=158771"
-2019-01-31,"Counties/Manukau","Miss","4U - arrest and follow up","Handgun - pistol",44,"M","Māori",NA
-2019-02-21,"Bay of Plenty","Fatal","4U - arrest and follow up","Shotgun Vehicle",29,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=159872"
+2017-02-26,"Wellington","Fatal","2R - recovery motor vehicle","Cutting/stabbing weapon",44,"M","European","https://most0010142.expert.services/includes/download.ashx?ID=150490"
+2017-07-07,"Tasman","Non-fatal injury","3T - turnover","No weapon",34,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=152448"
+2017-07-26,"Northland","Fatal-cause unconfirmed","Homicide","Rifle MSSA",56,"M","European","https://most0010142.expert.services/includes/download.ashx?ID=152248"
+2017-08-13,"Waikato","Miss","3T - turnover","MSSA",36,"M","Maori","https://most0010142.expert.services/includes/download.ashx?ID=153200"
+2017-08-28,"Waikato","Miss","2W - arrest warrant (other)","Vehicle",37,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=155889"
+2017-12-19,"Central","Non-fatal injury","1D - domestic dispute incident","Rifle (cut down)",22,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=155348"
+2018-02-23,"Northland","Miss","1C - car/person acting suspiciously","Unknown",40,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=154931"
+2018-03-31,"Waitemata","Fatal","1M - mental health","Cutting/stabbing weapon",29,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=156239"
+2018-10-19,"Waitemata","Non-fatal injury","1Z - other incident","Shotgun",22,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=159823"
+2018-11-25,"Canterbury","Fatal-cause unconfirmed","1D - domestic dispute incident","Shotgun; Vehicle",56,"M","Unknown","https://www.ipca.govt.nz/includes/download.ashx?ID=158771"
+2019-01-31,"Counties/Manukau","Miss","4U - arrest and follow up","Handgun - pistol",44,"M","Maori",NA
+2019-02-21,"Bay of Plenty","Fatal","4U - arrest and follow up","Shotgun; Vehicle",29,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=159872"
 2019-02-26,"Canterbury","Non-fatal injury","2W - arrest warrant (other)","Shotgun",32,"M","Pacific peoples","https://www.ipca.govt.nz/includes/download.ashx?ID=157979"
 2019-07-28,"Tasman","Non-fatal injury","1Z - other incident","Cutting/stabbing weapon",27,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=157664"
 2019-11-06,"Waikato","Miss","1Z - other incident","Vehicle",55,"M","European",NA
-2019-11-24,"Bay of Plenty","Fatal","1E - emergency/disaster/spill","Cutting/stabbing weapon",40,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=158792"
+2019-11-24,"Bay of Plenty","Fatal","1E - emergency/disaster/spill","Cutting/stabbing weapon",40,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=158792"
 2019-12-05,"Southern","Fatal","1X - threaten/attempt suicide","Rifle",66,"M","Unknown","https://www.ipca.govt.nz/includes/download.ashx?ID=158726"
-2019-12-17,"Eastern","Non-fatal injury","4U - arrest and follow up","Replica firearm",31,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=157751"
-2020-02-13,"Bay of Plenty","Fatal","PURSUIT","Rifle (cut down)",33,"M","Māori","https://www.ipca.govt.nz/includes/download.ashx?ID=159491"
+2019-12-17,"Eastern","Non-fatal injury","4U - arrest and follow up","Replica firearm",31,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=157751"
+2020-02-13,"Bay of Plenty","Fatal","PURSUIT","Rifle (cut down)",33,"M","Maori","https://www.ipca.govt.nz/includes/download.ashx?ID=159491"
 2020-04-20,"Counties Manukau","Fatal","1C - car/person acting suspiciously","Machete",43,"M","Asian","https://www.ipca.govt.nz/includes/download.ashx?ID=158988"
 2020-05-19,"Central","Fatal","1C - car/person acting suspiciously","Firearm - type unconfirmed",54,"M","European","https://www.ipca.govt.nz/includes/download.ashx?ID=159938"
-2020-05-27,"Bay of Plenty","Miss","2W – arrest warrant (other)","Shotgun",28,"M","Māori",NA
+2020-05-27,"Bay of Plenty","Miss","2W - arrest warrant (other)","Shotgun",28,"M","Maori",NA
 2020-12-01,"Northland","Non-fatal injury","6820 - Firearms offences","Firearm",30,"M","European",NA
 2021-02-25,"Counties Manukau","Fatal","6820 - Firearms offences","Firearm",34,"M","Pacific peoples",NA
 2021-07-14,"Waikato","Fatal","Unknown","Firearm",42,"M","European",NA
