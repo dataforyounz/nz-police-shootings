@@ -7,12 +7,14 @@ output:
     theme: cerulean
     version: 4
     social: ["twitter", "linkedin"]
-    source_code: embed
+    source_code: 'https://github.com/dataforyounz/nz-police-shootings/tree/main'
 ---
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
 library( dplyr )
+library( DT )
+library( leaflet )
 
 data_folder <- "dat"
 data_file   <- "shooting_data.Rdata"
@@ -52,6 +54,8 @@ About
 ---
 
 Link to data 
+
+Last updated: `r format(Sys.Date(), "%d/%m/%Y")`
 
 ---
 
@@ -93,12 +97,28 @@ Row
 
 ```{r}
 
+leaflet() %>% addTiles()
+
 ```
 
 ### Chart B
 
 ```{r}
 
+
+
 ```
 
+Data 
+===================================================================
+
+#### Use the buttons below to export the data
+
+### 
+
+```{r}
+
+datatable( shooting_df )
+
+```
 
