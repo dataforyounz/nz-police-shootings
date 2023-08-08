@@ -13,7 +13,7 @@ output:
 ```{r setup, include=FALSE}
 library(flexdashboard)
 
-data_folder <- "../data_prep"
+data_folder <- "dat"
 data_file   <- "shooting_data.RData"
 data_path   <- file.path( data_folder, data_file )
 
