@@ -1,20 +1,23 @@
 ---
-title: "Police Shootings 1916 – 2021"
+title: "New Zealand Police Shootings"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
     vertical_layout: fill
-    theme: cerulean
-    version: 4
+    theme:
+      version: 4
+      bootswatch: cerulean
     social: ["twitter", "linkedin"]
     source_code: 'https://github.com/dataforyounz/nz-police-shootings/tree/main'
 ---
 
 ```{r setup, include=FALSE}
-library(flexdashboard)
+library( flexdashboard )
 library( dplyr )
 library( DT )
 library( leaflet )
+library( highcharter )
+library( lubridate )
 
 data_folder <- "dat"
 data_file   <- "shooting_data.Rdata"
@@ -34,15 +37,26 @@ shooting_df <- shooting_df %>%
                               Outcome.of.Shots.Fired %in% c("Non-fatal injury", "Non-fatal injury (offender)", 
                                                           "Non-fatal injury (bystander)") ~ 1,
                               TRUE ~ 0
-                            )
+                            ),
+                 outcome_category = case_when(
+                                          fatal_fl == 1 ~ "Fatal",
+                                          non_fatal_fl == 1 ~ "Non-Fatal",
+                                          TRUE ~ "Miss"
+                                      )
                )
                
-                         
-
+                        
 # Measures
 total_shootings <- nrow( shooting_df )
 total_fatal     <- nrow( shooting_df %>% filter( fatal_fl == 1) )
 total_non_fatal <- nrow( shooting_df %>% filter( non_fatal_fl == 1) )
+total_miss      <- nrow( shooting_df %>% filter( non_fatal_fl != 1 & fatal_fl != 1) )
+
+# Summary data for shootings per year
+shootings_by_year <- tibble( shooting_df ) %>% 
+                     mutate( year = year(Incident.Date) ) %>% 
+                     summarise( n = n(), .by = c(year, outcome_category)) %>% 
+                     rename( Count = n, Year = year, Outcome = outcome_category ) 
 
 ```
 
@@ -52,6 +66,8 @@ About
 #### About this dashbaord
 
 ---
+
+Visualises data about police shootings between 1916 – 2021
 
 Link to data 
 
@@ -89,6 +105,14 @@ flexdashboard::valueBox( value = total_non_fatal,
                          icon = "fa-info" )
 ```
 
+###
+
+```{r}
+flexdashboard::valueBox( value = total_miss, 
+                         caption = "Total Shots Missed",
+                         icon = "fa-info" )
+```
+
 
 Row
 --------------------------------- 
@@ -101,18 +125,24 @@ leaflet() %>% addTiles()
 
 ```
 
-### Chart B
+### Number of Police Shootings per Year
 
 ```{r}
 
-
+hchart( shootings_by_year, "column", 
+        hcaes(x = Year, y = Count, group = Outcome) ) %>% 
+  #hc_title(text = "Number of Police Shootings per Year") %>% 
+  hc_plotOptions( column = list(stacking = "normal" )) %>% 
+  hc_yAxis( title = list(text = "Number of Shootings") )
 
 ```
+
+> Source: New Zealand Police
 
 Data 
 ===================================================================
 
-#### Use the buttons below to export the data
+##### Use the buttons below to export the data
 
 ### 
 
