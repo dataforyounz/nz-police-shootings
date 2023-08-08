@@ -2,7 +2,7 @@
 title: "Police Shootings 1916 – 2021"
 output: 
   flexdashboard::flex_dashboard:
-    orientation: columns
+    orientation: rows
     vertical_layout: fill
     theme: cerulean
     version: 4
@@ -22,41 +22,72 @@ data_path   <- file.path( data_folder, data_file )
 load( data_path )
 
 shooting_df <- shooting_df %>% 
-               mutate( fatal_fl = case_when(
-                 Outcome.of.Shots.Fired 
-               ))
+               mutate( 
+                 fatal_fl = case_when(
+                              Outcome.of.Shots.Fired %in% c("Fatal", "Fatal (bystander)", 
+                                                          "Fatal-cause unconfirmed") ~ 1,
+                              TRUE ~ 0
+                            ),
+                 non_fatal_fl = case_when(
+                              Outcome.of.Shots.Fired %in% c("Non-fatal injury", "Non-fatal injury (offender)", 
+                                                          "Non-fatal injury (bystander)") ~ 1,
+                              TRUE ~ 0
+                            )
+               )
+               
+                         
 
 # Measures
 total_shootings <- nrow( shooting_df )
-total_fatal     <- nrow( subset( shooting_df,  == "Fatal" ) )
-total_non_fatal <- nrow( subset( shooting_df, `Outcome of Shots Fired` == "Non-fatal injury" ) )
+total_fatal     <- nrow( shooting_df %>% filter( fatal_fl == 1) )
+total_non_fatal <- nrow( shooting_df %>% filter( non_fatal_fl == 1) )
 
 ```
 
 About
-=======================================================================
+===================================================================
 
 #### About this dashbaord
 
-Ipsum Lorem
+---
+
+Link to data 
 
 ---
 
-A link to the original report is provided [here](https://www.police.govt.nz/sites/default/files/publications/tactical-options-supplement-shootings-by-police-august2021.pdf).
+Shootings 
+===================================================================
 
-A link to Police data is provided [here](https://www.police.govt.nz/about-us/publications-statistics/data-and-statistics/policedatanz)
+Row
+--------------------------------- 
 
----
+### 
 
-Last updated: `r format( Sys.Date(), "%d/%m/%Y")`
+```{r }
+flexdashboard::valueBox( value = total_shootings, 
+                         caption = "Total Police Shootings", 
+                         icon = "fa-info")
+```
 
-Shootings
-=======================================================================
+###
 
-Column {data-width=650}
------------------------------------------------------------------------
+```{r}
+flexdashboard::valueBox( value = total_fatal, 
+                         caption = "Total Fatal Shootings",
+                         icon = "fa-info")
+```
+
+###
+
+```{r}
+flexdashboard::valueBox( value = total_non_fatal, 
+                         caption = "Total Non-Fatal Shootings",
+                         icon = "fa-info" )
+```
 
 
+Row
+--------------------------------- 
 
 ### Chart A
 
@@ -64,18 +95,10 @@ Column {data-width=650}
 
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
-
 ### Chart B
 
 ```{r}
 
 ```
 
-### Chart C
-
-```{r}
-
-```
 
