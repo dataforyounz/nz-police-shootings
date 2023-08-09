@@ -17,46 +17,43 @@ library( dplyr )
 library( DT )
 library( leaflet )
 library( highcharter )
-library( lubridate )
+library( htmltools )
 
 data_folder <- "dat"
-data_file   <- "shooting_data.Rdata"
+data_file   <- "shooting_data_clean.Rdata"
 data_path   <- file.path( data_folder, data_file )
 
 # Load shooting data
 load( data_path )
 
-shooting_df <- shooting_df %>% 
-               mutate( 
-                 fatal_fl = case_when(
-                              Outcome.of.Shots.Fired %in% c("Fatal", "Fatal (bystander)", 
-                                                          "Fatal-cause unconfirmed") ~ 1,
-                              TRUE ~ 0
-                            ),
-                 non_fatal_fl = case_when(
-                              Outcome.of.Shots.Fired %in% c("Non-fatal injury", "Non-fatal injury (offender)", 
-                                                          "Non-fatal injury (bystander)") ~ 1,
-                              TRUE ~ 0
-                            ),
-                 outcome_category = case_when(
-                                          fatal_fl == 1 ~ "Fatal",
-                                          non_fatal_fl == 1 ~ "Non-Fatal",
-                                          TRUE ~ "Miss"
-                                      )
-               )
-               
-                        
-# Measures
-total_shootings <- nrow( shooting_df )
-total_fatal     <- nrow( shooting_df %>% filter( fatal_fl == 1) )
-total_non_fatal <- nrow( shooting_df %>% filter( non_fatal_fl == 1) )
-total_miss      <- nrow( shooting_df %>% filter( non_fatal_fl != 1 & fatal_fl != 1) )
+data_file   <- "geo_data.Rdata" 
+data_path   <- file.path( data_folder, data_file )
 
-# Summary data for shootings per year
-shootings_by_year <- tibble( shooting_df ) %>% 
-                     mutate( year = year(Incident.Date) ) %>% 
-                     summarise( n = n(), .by = c(year, outcome_category)) %>% 
-                     rename( Count = n, Year = year, Outcome = outcome_category ) 
+load( data_path )
+
+pal <- colorNumeric(
+  palette = "Blues",
+  domain = district_geo_data$Count
+  )
+
+label_content <- lapply( seq_along(district_geo_data$District), 
+                         function(x){
+                            HTML( paste0( strong("District: "), 
+                                          district_geo_data$District[x] ), 
+                                 '<hr style="height:1px;border-width:0;color:gray;background-color:gray">',
+                                  paste0( strong("Fatal: "), 
+                                         district_geo_data$total_fatal[x] ),
+                                 "<br>",
+                                  paste0( strong("Non-Fatal: "), 
+                                         district_geo_data$total_non_fatal[x] ),
+                                 "<br>",
+                                  paste0( strong("Misses: "), 
+                                         district_geo_data$total_miss[x] ),
+                                 '<hr style="height:1px;border-width:0;color:gray;background-color:gray">',
+                                  paste0( strong("Total: "), 
+                                          district_geo_data$Count[x] )
+                                 )
+})
 
 ```
 
@@ -117,11 +114,23 @@ flexdashboard::valueBox( value = total_miss,
 Row
 --------------------------------- 
 
-### Chart A
+### Shootings by Police District
 
 ```{r}
 
-leaflet() %>% addTiles()
+leaflet(district_geo_data) %>% 
+  addTiles() %>% 
+  addPolygons( weight = 1, smoothFactor = 0.5, opacity = 1.0, 
+               fillOpacity = 0.5, color = ~pal(Count),
+               label = ~label_content,
+               fillColor = ~pal(Count),
+               highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                   bringToFront = TRUE),
+               labelOptions = labelOptions(
+                 style = list( "background-color" = "skyblue" )
+               )
+               )
+  
 
 ```
 
