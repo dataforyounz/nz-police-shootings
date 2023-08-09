@@ -111,7 +111,7 @@ flexdashboard::valueBox( value = total_miss,
 ```
 
 
-Row
+Row 
 --------------------------------- 
 
 ### Shootings by Police District
@@ -145,8 +145,6 @@ hchart( shootings_by_year, "column",
   hc_yAxis( title = list(text = "Number of Shootings") )
 
 ```
-
-> Source: New Zealand Police
 
 Data 
 ===================================================================
