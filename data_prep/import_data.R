@@ -2,15 +2,22 @@
 library( tabulizer )
 library( tidyverse )
 
+## SETUP ----------------------------------------------------------------------------------------------
+#
 # Directory variables
 file_folder <- "data_prep" 
 file_name   <- list.files( file_folder, pattern = ".pdf" )
 file_path   <- file.path( file_folder, file_name ) 
 
-# Table extraction or file import
+# Target folder
+output_folder <- "dashboard/dat"
+
+## PDF EXTRACTION / FILE IMPORT ----------------------------------------------------------------------------------
+#
+# If an extracted data file doesn't exist, run the extract area routine
 if( !file.exists( file.path(file_folder, "extracted_data.Rdata") ) ) {
  
-  # Select areas to extract
+  # Select table areas to extract
   tables <- extract_areas( file_path )
   save( tables, file = file.path(file_folder, "extracted_data.Rdata") )
 
@@ -21,9 +28,12 @@ title <- tables[[1]][3,]
 notes <- tables[[3]]
 data  <- tables[4:14]
 
+## FIX COLUMN NAMES ----------------------------------------------------------------------------------
+#
 # Loop through each list element and tidy up column names
 # Columns names are spread over the first three rows
-# Export each page to .csv file for some manual processing (seemed easier...)
+# Then...
+# Export each page to temp .csv file for some manual processing (seemed easier...)
 if( !dir.exists(file.path(file_folder, "tmp")) ){
 dfs <- lapply( seq_along(data), 
                function(d){
@@ -39,6 +49,22 @@ dfs <- lapply( seq_along(data),
 
 }
 
+## =====================================================================================================
+# Manual Processing Notes
+# 1. Tidied up file encoding errors
+# 2. Tidied up dates so 1916 wasn't read in as 2016
+# 3. Where multiple weapons were listed, separated with semi-colon
+# 4. Links to IPCA reports were sometimes broken across multiple lines, this was fixed
+# 5. Outcome of shots fired also spread across multiple lines, this was fixed
+#
+# All fixes are saved in tmp folder which can then be read in.
+# Further fixes can also be applied without affecting the execution of this script
+# It will simply read in the files as saved in the tmp folder
+## =====================================================================================================
+
+## COMBINE TEMP FILES ----------------------------------------------------------------------------------
+#
+# Read the tidied temp files back in and assign to list object
 dfs_in <- lapply( seq_along(data), function(d){
   
   file <- paste0("tmp/tmp_",d,".csv") 
@@ -46,8 +72,8 @@ dfs_in <- lapply( seq_along(data), function(d){
   
 })
 
-
 # Bind all rows together to create a final data frame
+# Apply some formatting to handle missing values and NAs
 shooting_df <- tibble( do.call( rbind, dfs_in ) ) %>% 
                mutate( Incident.Date = dmy(Incident.Date), 
                        Subject.Weapon = case_when(
@@ -63,7 +89,9 @@ shooting_df <- tibble( do.call( rbind, dfs_in ) ) %>%
                          TRUE ~ Link.to.IPCA.Investigation.Public.Report
                        ))
 
-# Save the variables
-save( title, notes, shooting_df, file = file.path(file_folder, "shooting_data.Rdata") )
-write.csv( shooting_df, row.names = F, file = file.path(file_folder, "shooting_data.csv") )
+## EXPORT ----------------------------------------------------------------------------------------------
+#
+# Save the variables to the target folder
+save( title, notes, shooting_df, file = file.path(output_folder, "shooting_data.Rdata") )
+write.csv( shooting_df, row.names = F, file = file.path(output_folder, "shooting_data.csv") )
 
